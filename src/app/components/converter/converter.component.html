@@ -1,0 +1,25 @@
+<div class="calcouter">
+    
+    <h3>Temperature converter</h3>
+
+    <div class="temptypecontainer">
+        <h2 >Fahrenheiht:</h2>
+    
+        <h2 >Celcius:</h2>
+    </div>
+
+    <br>
+
+    <div class="saved2">
+        <input class="savedforlater" type="number" [(ngModel)]="fahrenheit" (ngModelChange)="convertToC()">
+        <input class="savedforlater" type="number" [(ngModel)]="celcius" (ngModelChange)="convertToF()">
+    </div>
+
+    <br>
+
+    <div class="temptypecontainer saved2">
+    <button class="converterbtn" (click)="convertToC()">Convert to C!</button>
+    <button class="converterbtn" (click)="convertToF()">Convert to F!</button>
+    </div>
+
+</div>

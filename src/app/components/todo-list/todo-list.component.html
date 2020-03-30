@@ -1,0 +1,15 @@
+<h2>My To-do list:</h2>
+
+<div class="container">
+    <h6>Add new things i have to do!</h6>
+
+    <input [(ngModel)]="model.item" name="itemInput" class="form-control" type="text">
+</div>
+
+<button (click)="saveItem()" name="submit" type="button" class="btn btn-outline-dark"> Add</button>
+
+<div>
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let item of allItems"  class="list-group-item">{{item.item}}</li>
+    </ul>
+</div>
